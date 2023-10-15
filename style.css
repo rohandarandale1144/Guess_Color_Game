@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(93, 191, 191);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4d2d2d;
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+    margin: 20px 0px;
+    color: #4d2d2d;
+    font-weight: 500;
+    background-color: rgb(194, 210, 112);
+    border-radius: 20px;
+    width: 300px;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.carout{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(76, 48, 103); */
+    width: 400px;
+}
+
+.card{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    margin: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media (max-width:350px) {
+    h1{
+        font-size: 20px;
+    }
+
+    .carout{
+        width: 200px;
+    }
+
+    .card{
+        width: 50px;
+        height: 50px;
+    }
+
+    p{
+        margin: 5px 0;
+        width: 100px;
+    }
+}
+
+@media (max-width:450px) {
+    h1{
+        font-size: 30px;
+    }
+
+    .carout{
+        width: 300px;
+    }
+
+    .card{
+        width: 70px;
+        height: 70px;
+    }
+
+    p{
+        margin: 10px 0;
+        width: 200px;
+    }
+}
